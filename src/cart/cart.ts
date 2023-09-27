@@ -1,6 +1,7 @@
 import Product from "../products/product";
+import { CartPrococol } from "./contracts/cart.protocol";
 
-export default class Cart {
+export default class Cart implements CartPrococol {
   private readonly _items: Product[] = [];
 
   addItem(item: Product):void {
